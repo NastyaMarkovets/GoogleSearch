@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="resultCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="resultCell" rowHeight="120" id="KGk-i7-Jjw" customClass="ResultTableViewCell" customModule="GoogleSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIFT — Википедия" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhN-UV-Lhb">
+                        <rect key="frame" x="10" y="10" width="353" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHV-dL-G4A">
+                        <rect key="frame" x="10" y="37" width="353" height="16.5"/>
+                        <string key="text">https://ru.wikipedia.org/wiki/SWIFT
+</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZX-BG-aff">
+                        <rect key="frame" x="10" y="59.5" width="353" height="49"/>
+                        <string key="text">Общество всемирных межбанковских финансовых каналов связи (от англ. Society for Worldwide Interbank Financial Telecommunications (SWIFT)</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PhN-UV-Lhb" secondAttribute="trailing" constant="10" id="7u1-0f-M6P"/>
+                    <constraint firstItem="IHV-dL-G4A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GBQ-i1-gj8"/>
+                    <constraint firstItem="PhN-UV-Lhb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OvQ-MS-Vil"/>
+                    <constraint firstItem="PhN-UV-Lhb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VZQ-dG-0Kv"/>
+                    <constraint firstItem="TZX-BG-aff" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WzY-Ct-XL8"/>
+                    <constraint firstAttribute="trailing" secondItem="IHV-dL-G4A" secondAttribute="trailing" constant="10" id="b3h-UB-uXd"/>
+                    <constraint firstItem="TZX-BG-aff" firstAttribute="top" secondItem="IHV-dL-G4A" secondAttribute="bottom" constant="6" id="eBc-oo-E7L"/>
+                    <constraint firstItem="IHV-dL-G4A" firstAttribute="top" secondItem="PhN-UV-Lhb" secondAttribute="bottom" constant="6" id="lbf-bO-5zz"/>
+                    <constraint firstAttribute="trailing" secondItem="TZX-BG-aff" secondAttribute="trailing" constant="10" id="vYr-Ti-WzY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="TZX-BG-aff" id="c85-pf-ste"/>
+                <outlet property="titleLabel" destination="PhN-UV-Lhb" id="ZEh-nN-f8S"/>
+                <outlet property="urlLabel" destination="IHV-dL-G4A" id="GNN-J0-UMc"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="187.55622188905548"/>
+        </tableViewCell>
+    </objects>
+</document>
